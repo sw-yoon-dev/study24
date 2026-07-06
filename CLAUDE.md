@@ -13,6 +13,8 @@ Spring Boot 4.1.0 + Java 17 기반 스터디 카페 웹 애플리케이션
 - 코드 내의 주석, 변수/메서드에 대한 설명은 모두 **한국어(Korean)**로 작성한다.
 - 커밋 메시지는 'feat: ~', 'fix: ~'와 같이 Conventional Commits 형식을 따른다.
 
+## 로컬 개발 환경
+windows 10 64bit
 
 ## Build and Development Commands
 
