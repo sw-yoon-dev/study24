@@ -31,12 +31,17 @@ public class Seat extends BaseTimeEntity {
 	private String seatNumber;
 
 	@Enumerated(EnumType.STRING)
+	@Column(name = "seat_type", nullable = false, length = 20)
+	private SeatType seatType;
+
+	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, length = 20)
 	private SeatStatus status;
 
 	@Builder
-	public Seat(String seatNumber, SeatStatus status) {
+	public Seat(String seatNumber, SeatType seatType, SeatStatus status) {
 		this.seatNumber = seatNumber;
+		this.seatType = seatType;
 		this.status = status != null ? status : SeatStatus.AVAILABLE;
 	}
 

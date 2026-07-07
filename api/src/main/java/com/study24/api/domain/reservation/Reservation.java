@@ -43,9 +43,9 @@ public class Reservation extends BaseTimeEntity {
 	@JoinColumn(name = "seat_id", nullable = false)
 	private Seat seat;
 
-	/** 이 예약에 사용된 이용권 */
+	/** 이 예약에 사용된 이용권. 이용권 연동 기능은 이번 범위 밖이라 null로 생성될 수 있다. */
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "payment_id", nullable = false)
+	@JoinColumn(name = "payment_id", nullable = true)
 	private Payment payment;
 
 	@Column(name = "start_time", nullable = false)
