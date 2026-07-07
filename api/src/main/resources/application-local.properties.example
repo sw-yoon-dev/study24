@@ -1,0 +1,14 @@
+# 로컬 개발용 설정 예시 파일
+# 이 파일을 복사하여 application-local.properties 로 이름을 바꾸고 실제 값을 채워 넣으세요.
+# application-local.properties 는 .gitignore 에 등록되어 있어 깃허브에 올라가지 않습니다.
+#
+# 사용 방법: application.properties 에 spring.profiles.active=local 을 추가하거나
+# 실행 시 --spring.profiles.active=local 옵션을 주면 이 설정이 함께 적용됩니다.
+
+# 운영/외부 DB 접속 정보 (예시 - 실제 값으로 교체)
+# spring.datasource.url=jdbc:mysql://localhost:3306/studycafe
+# spring.datasource.username=REPLACE_ME
+# spring.datasource.password=REPLACE_ME
+
+# 외부 API 키 등 민감정보 (예시)
+# some.api.key=REPLACE_ME

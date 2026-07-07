@@ -36,3 +36,21 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### 민감정보 / 로컬 설정 (예방적) ###
+*.env*
+application-*.properties
+application-*.yml
+!application-*.properties.example
+!application-*.yml.example
+*-secret.yml
+*.pem
+*.key
+
+### 데이터베이스 파일 (예방적, data/ 로 이미 커버되지만 확장자로도 이중 방어) ###
+*.mv.db
+*.trace.db
+
+### 로그 파일 ###
+*.log
+logs/
