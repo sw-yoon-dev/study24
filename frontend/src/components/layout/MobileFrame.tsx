@@ -8,7 +8,7 @@ interface MobileFrameProps {
 export default function MobileFrame({ children }: MobileFrameProps) {
   return (
     <div className="flex min-h-screen justify-center bg-gray-200">
-      <div className="relative min-h-screen w-full max-w-[420px] bg-gray-50 shadow-xl">
+      <div className="relative min-h-screen w-full max-w-[520px] bg-gray-50 shadow-xl">
         {children}
       </div>
     </div>
