@@ -3,7 +3,7 @@ import BottomTabBar from './components/layout/BottomTabBar'
 import MobileFrame from './components/layout/MobileFrame'
 import MyInfoPlaceholderPage from './pages/MyInfoPlaceholderPage'
 import MyMembershipPage from './pages/MyMembershipPage'
-import SeatPlaceholderPage from './pages/SeatPlaceholderPage'
+import SeatPage from './pages/SeatPage'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <div className="pb-20">
           <Routes>
             <Route path="/" element={<MyMembershipPage />} />
-            <Route path="/seats" element={<SeatPlaceholderPage />} />
+            <Route path="/seats" element={<SeatPage />} />
             <Route path="/my-info" element={<MyInfoPlaceholderPage />} />
           </Routes>
         </div>
